@@ -1,0 +1,21 @@
+.page {
+    display: flex;
+  }
+
+  
+  .table-of-contents {
+    width: 25%;
+    background-color: greenyellow;
+    height: 100vh;
+  }
+  
+.flex{
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    cursor: pointer;
+
+
+}
+
+  
