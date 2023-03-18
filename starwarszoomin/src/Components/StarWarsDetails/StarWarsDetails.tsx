@@ -30,14 +30,30 @@ interface StarWarsDetails {
     }, []);
 
     return (
-        <div className="main">
-        {films.map((film: Film) => (
-          <div key={film.episode_id}>
-            <h2>{film.title}</h2>
-            <p>{film.opening_crawl}</p>
-          </div>
-        ))}
+      //   <div className="main">
+      //   {films.map((film: Film) => (
+      //     <div key={film.episode_id}>
+      //       <h2>{film.title}</h2>
+      //       <p>{film.opening_crawl}</p>
+      //     </div>
+      //   ))}
+        
+      // </div>
+      <div className="wrapper">
+      <div className="scroll-text">
+        <h1>STAR WARS</h1>
+        <h2>Scrolling Text Effect</h2>
+        <p>LONG AGO, IN A GALAXY FAR, FAR AWAY</p>
+        <br></br>
+        <p>YOU WERE PRESENTED THIS</p> 
+        <p>ASSIGNMENT</p>
+          <br></br>
+       <p>THAT EXCEEDED YOUR EVERY</p>
+       <p>EXPECTATION</p>
+        <br></br>
+        <p>AND HIRED TAL ANAVA</p>
       </div>
+    </div>
     );
 };
     

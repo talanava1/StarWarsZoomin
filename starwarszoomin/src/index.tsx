@@ -12,6 +12,7 @@ import ThePhantomMenace from "./Components/StarWarsMovies/ThePhantomMenace/ThePh
 import AttackOfTheClones from "./Components/StarWarsMovies/AttackOfTheClones/AttackOfTheClones";
 import RevengeoftheSith from "./Components/StarWarsMovies/RevengeoftheSith/RevengeoftheSith";
 
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

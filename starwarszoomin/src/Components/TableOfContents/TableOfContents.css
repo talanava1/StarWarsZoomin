@@ -1,3 +1,7 @@
+*{
+  font-family: "Star Wars", sans-serif;
+}
+
 .page {
     display: flex;
   }
