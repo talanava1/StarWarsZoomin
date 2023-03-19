@@ -55,7 +55,7 @@ export const MovieCardComponent = ({title, episodeId, openingCrawl, loading, img
             >
              {isLiked ? 'Remove from Favorites' : 'Select As Favorite' }
             </button>
-            <div className="likedsign">{isLiked && 'Liked'}</div>
+            <div className="likedsign">{isLiked && 'Favorited'}</div>
           </div>)}
         </div>
       </div>

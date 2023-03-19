@@ -6,8 +6,6 @@
 margin-left: 29.5vw;
 box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 position: relative;
-
-
 }
 
 .movietitle{
@@ -67,6 +65,77 @@ position: relative;
   }
 }
 
+@media screen and (max-width: 753px) {
+.movieposter {
+  margin-left: 16vw;
+}
+
+.movieopeningcrawl {
+  width: 71%;
+  margin-left: 8vw;
+}
+
+.movietitle{
+  color: #ffc909;
+  position: relative;
+
+}
+
+.selectedbtn{
+  margin-left: 22vw;
+}
+
+.likesign{
+  margin-left: 18vw;
+}
+}
+
+@media screen and (max-width: 643px) { 
+  .movieopeningcrawl {
+    width: 80%;
+    margin-left: 8vw;
+  }
+  }
+
+  @media screen and (max-width: 565px) { 
+    .movieopeningcrawl {
+      width: 90%;
+      margin-left: 3vw;
+    }
+    }
+
+    @media screen and (max-width: 505px) { 
+      .movieopeningcrawl {
+        width: 90%;
+        margin-left: 3vw;
+      }
+
+      .selectedbtn{
+        margin-left: 17vw;
+      }
+
+      .movieposter {
+        margin-left: 10vw;
+      }
+      }
+
+      @media screen and (max-width: 497px) { 
+        .movieopeningcrawl {
+          width: 91%;
+          margin-left: 2.5vw;
+        }
+  
+        .selectedbtn{
+          margin-left: 12vw;
+        }
+  
+        .movieposter {
+          margin-left: 18vw;
+          max-width: 1000%;
+        }
+        }
+
+
 @media screen and (max-width: 375px) {
 
   .wrapper {
@@ -83,13 +152,13 @@ position: relative;
   }
 
   .movieposter{
-    margin-left: 18.5vw;
+    margin-left: 15.5vw;
     max-width: 55%;
   }
 
   .movieopeningcrawl{
-    margin-left: 6vw;
-    max-width: 90%;
+    margin-left: 10vw;
+    max-width: 74%;
     width: auto;
     font-size: small;
   }
@@ -100,7 +169,7 @@ position: relative;
     line-height: 150%;
     flex-wrap: wrap;
     position: fixed;
-    animation: scroll 300s linear forwards;
+    animation: scroll 180s linear forwards;
   }
 }
 

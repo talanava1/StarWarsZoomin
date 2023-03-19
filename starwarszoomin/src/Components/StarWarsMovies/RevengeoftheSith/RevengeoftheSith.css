@@ -1,3 +1,9 @@
 .likedsign{
     margin-left: 38vw;
 }
+
+@media screen and (max-width: 753px) {
+    .likedsign{
+        margin-left: 34vw;
+    }
+}

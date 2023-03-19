@@ -68,12 +68,22 @@ interface StarWarsDetails {
         <p>AWAY</p>
         <br></br>
         <p>YOU WERE PRESENTED THIS</p> 
-        <p>ASSIGNMENT</p>
+        <p>WEBSITE</p>
           <br></br>
-       <p>THAT EXCEEDED YOUR EVERY</p>
-       <p>EXPECTATION</p>
+       <p>THAT ALLOWED YOU TO</p>
+       <p>CLICK AND SEE DETAILS</p>
+       <p>OF YOUR FAVORITE STAR</p>
+       <p>WARS FILMS</p>
+
+
         <br></br>
-        <p>AND HIRED TAL ANAVA</p>
+        <p>AND ALSO CHOOSE WHICH ONE</p>
+        <p>IS YOUR FAVORITE</p>
+
+        <br></br>
+        <p>SEE FOR YOURSELF AND</p>
+        <p>TRY IT OUT!</p>
+
       </div>
     </div>
     );
