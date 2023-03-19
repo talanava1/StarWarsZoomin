@@ -18,6 +18,13 @@ interface ANewHope {
 
     const [films, setFilms] = useState<Film[]>([]);
 
+
+    function handleButtonClick() {
+      localStorage.setItem('favoriteFilm', 'A New Hope');
+      console.log('favoriteFilms')
+    }
+
+
     useEffect(() => {
       fetch("https://swapi.dev/api/films/1/")
         .then(response => {
@@ -45,10 +52,11 @@ interface ANewHope {
         {films.map((film: Film) => (
           <div key={film.episode_id}>
             <h2>{film.title}</h2>
-            <img src={AnewhopePhoto} alt="movie-poster"/>
-            <p>{film.opening_crawl}</p>
+            <img className="movieposter" src={AnewhopePhoto} alt="movie-poster"/>
+            <p className="movieopeningcrawl">{film.opening_crawl}</p>
           </div>
         ))}
+        <button className="selectedbtn" onClick={handleButtonClick}>Select As Favorite</button>
       </div>
         </div>
     );

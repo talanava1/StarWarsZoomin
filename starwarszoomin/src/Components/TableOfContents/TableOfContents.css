@@ -3,15 +3,21 @@
 }
 
 .page {
-    display: flex;
+  display: flex;
   }
 
   
   .table-of-contents {
-    width: 25%;
-    background-color: greenyellow;
-    height: 100vh;
-    display: inline;
+  width: 25%;
+  max-width: 50vw;
+  height: 100vh;
+  display: inline;
+  font-size:large;
+  line-height: 90%;
+  font-weight: bold;
+  flex-wrap: wrap;
+  box-shadow: inset 0 0 10px #ffc909;
+
   }
   
 .flex{
@@ -19,7 +25,8 @@
     margin-left: 2vw;
     margin-top: 2vw;
     cursor: pointer;
-
+    color: #ffc909;
+    margin-top: 20%;
 
 }
 

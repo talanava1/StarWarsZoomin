@@ -41,6 +41,28 @@ interface StarWarsDetails {
       // </div>
       <div className="wrapper">
       <div className="scroll-text">
+        <p></p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      
         <h1>STAR WARS</h1>
         <p>LONG AGO, IN A GALAXY FAR, FAR</p>
         <p>AWAY</p>
