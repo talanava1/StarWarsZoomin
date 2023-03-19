@@ -22,12 +22,22 @@
   
 .flex{
     display: flex;
+    text-decoration: none;
     margin-left: 2vw;
     margin-top: 2vw;
     cursor: pointer;
     color: #ffc909;
     margin-top: 20%;
-
 }
+
+a.active{
+text-decoration: underline;
+  color: #36F476;
+}
+
+a:hover{
+  text-decoration: underline;
+    color: #36F476;
+  }
 
   

@@ -1,20 +1,126 @@
-.table-of-contents {
-    width: 25%;
-    background-color: rgb(20, 20, 20);
-    height: 100vh;
-    box-shadow: inset;
-  }
+.main{
+  background-color: rgb(20, 20, 20);
+}
 
 .movieposter{
-margin-left: 29vw;
+margin-left: 29.5vw;
+box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+position: relative;
+
+
+}
+
+.movietitle{
+  color: #ffc909;
+  position: relative;
+
 }
 
 .movieopeningcrawl{
   width: 60%;
   margin-left: 17vw;
+  color: #ffc909;
+  font-size: large;
+  font-weight: bold;
 }
 
 .selectedbtn{
-  margin-left: 34vw;
+  margin-left: 33vw;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  background: #ffc909;
+  border: 1px solid #ffc909;
+  font-size: 13px;
+  height: 31px;
+  padding: 0 11px;
+  text-align: center;
+  width: 10%;
+  min-width: 200px;
+  font-weight: 500;
+  color: #0F1111;
+}
 
+
+.selectedbtn:hover{
+  background: #F7CA00;
+  border-color: #F2C200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+
+@media screen and (max-width: 1290px) {
+
+  .wrapper {
+    height: auto;
+    width: 30%;
+  }
+
+  .scroll-text {
+    margin: 0;
+    font-size: x-large;
+    line-height: 150%;
+    flex-wrap: wrap;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .wrapper {
+    height: auto;
+    width: 30%;
+  }
+
+  .selectedbtn{
+    margin-left: 8.5vw;
+
+  }
+  .table-of-contents{
+    height: 115vh;
+  }
+
+  .movieposter{
+    margin-left: 18.5vw;
+    max-width: 55%;
+  }
+
+  .movieopeningcrawl{
+    margin-left: 6vw;
+    max-width: 90%;
+    width: auto;
+    font-size: small;
+  }
+
+  .scroll-text {
+    margin: 0;
+    font-size: x-large;
+    line-height: 150%;
+    flex-wrap: wrap;
+    position: fixed;
+    animation: scroll 300s linear forwards;
+  }
+}
+
+.loading-spinner {
+  animation: loading .5s infinite;
+  font-size: xx-large;
+  color: red;
+  margin-left: 30vw;
+  margin-top: 40vh
+}
+
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

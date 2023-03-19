@@ -1,8 +1,7 @@
 import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
-import "./ReturnOfTheJedi.css"
 import returnofthejediphoto from "./../../../../src/images/returnofthejedi.jpg"
-
+import { MovieCardComponent } from "../MovieCard";
 
 interface ReturnOfTheJediProp {
     contents: string[];
@@ -15,9 +14,8 @@ interface ReturnOfTheJediProp {
   };
 
   const ReturnOfTheJedi: React.FC<ReturnOfTheJediProp> = ({ contents }) => {
-
-
-    const [films, setFilms] = useState<Film[]>([]);
+    const [loading, setIsLoading] = useState<boolean>(true);
+    const [film, setFilms] = useState<any>([]);
 
     useEffect(() => {
       fetch("https://swapi.dev/api/films/3/")
@@ -30,27 +28,15 @@ interface ReturnOfTheJediProp {
         .then(data => {
           const { title, opening_crawl, episode_id } = data;
           const film = { title, opening_crawl, episode_id };
-          setFilms([film]);
+          setFilms(film);
         })
-        .catch(error => console.error('Error fetching films:', error));
+        .catch(error => console.error('Error fetching films:', error))
+        .finally(() => {
+          setIsLoading(false);
+        })
     }, []);
     
-
-    return (
-      <div className="page">
-<div className="table-of-contents">
-    <TableOfContents contents={[]}/>
-</div>
-        <div className="main">
-        {films.map((film: Film) => (
-          <div key={film.episode_id}>
-            <h2>{film.title}</h2>
-            <img src={returnofthejediphoto} alt="movie-poster"/>
-            <p>{film.opening_crawl}</p>
-          </div>
-        ))}
-      </div>
-        </div>
+    return (<MovieCardComponent title={film.title} episodeId={film.episode_id} openingCrawl={film.opening_crawl} loading={loading} imgSrc={returnofthejediphoto} />
     );
 };
     

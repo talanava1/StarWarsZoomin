@@ -2,6 +2,7 @@ import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
 import "./TheEmpireStrikesBack.css"
 import empirestrikesbackphoto from "./../../../../src/images/empirestrikesback.jpg"
+import { MovieCardComponent } from "../MovieCard";
 
 interface TheEmpireStrikesBackProp {
     contents: string[];
@@ -14,9 +15,8 @@ interface TheEmpireStrikesBackProp {
   };
 
   const TheEmpireStrikesBack: React.FC<TheEmpireStrikesBackProp> = ({ contents }) => {
-
-
-    const [films, setFilms] = useState<Film[]>([]);
+    const [loading, setIsLoading] = useState<boolean>(true);
+    const [film, setFilms] = useState<any>([]);
 
     useEffect(() => {
       fetch("https://swapi.dev/api/films/2/")
@@ -29,27 +29,15 @@ interface TheEmpireStrikesBackProp {
         .then(data => {
           const { title, opening_crawl, episode_id } = data;
           const film = { title, opening_crawl, episode_id };
-          setFilms([film]);
+          setFilms(film);
         })
-        .catch(error => console.error('Error fetching films:', error));
+        .catch(error => console.error('Error fetching films:', error))
+        .finally(() => {
+          setIsLoading(false);
+        })
     }, []);
     
-
-    return (
-      <div className="page">
-<div className="table-of-contents">
-    <TableOfContents contents={[]}/>
-</div>
-        <div className="main">
-        {films.map((film: Film) => (
-          <div key={film.episode_id}>
-            <h2>{film.title}</h2>
-            <img src={empirestrikesbackphoto} alt="movie-poster" />
-            <p>{film.opening_crawl}</p>
-          </div>
-        ))} 
-      </div>
-        </div>
+    return (<MovieCardComponent title={film.title} episodeId={film.episode_id} openingCrawl={film.opening_crawl} loading={loading} imgSrc={empirestrikesbackphoto} />
     );
 };
     
