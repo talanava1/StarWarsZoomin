@@ -1,6 +1,7 @@
 import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
 import "./TheEmpireStrikesBack.css"
+import empirestrikesbackphoto from "./../../../../src/images/empirestrikesback.jpg"
 
 interface TheEmpireStrikesBackProp {
     contents: string[];
@@ -43,9 +44,10 @@ interface TheEmpireStrikesBackProp {
         {films.map((film: Film) => (
           <div key={film.episode_id}>
             <h2>{film.title}</h2>
+            <img src={empirestrikesbackphoto} alt="movie-poster" />
             <p>{film.opening_crawl}</p>
           </div>
-        ))}
+        ))} 
       </div>
         </div>
     );

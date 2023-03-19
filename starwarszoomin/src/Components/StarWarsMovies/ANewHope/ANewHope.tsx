@@ -1,6 +1,7 @@
 import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
 import "./ANewHope.css"
+import AnewhopePhoto from "./../../../../src/images/rsz_9780571202997.jpg"
 
 interface ANewHope {
     contents: string[];
@@ -39,10 +40,12 @@ interface ANewHope {
 <div className="table-of-contents">
   <TableOfContents contents={[]}/>
 </div>
+
         <div className="main">
         {films.map((film: Film) => (
           <div key={film.episode_id}>
             <h2>{film.title}</h2>
+            <img src={AnewhopePhoto} alt="movie-poster"/>
             <p>{film.opening_crawl}</p>
           </div>
         ))}

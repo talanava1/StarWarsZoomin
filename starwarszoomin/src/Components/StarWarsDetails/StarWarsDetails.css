@@ -1,8 +1,4 @@
-/* .main {
-    width: 75%;
-    background-color: blue;
-    color: white;
-  } */
+/* Set default styles for desktop screens */
 
 body {
   background: rgb(20,20,20);
@@ -11,7 +7,6 @@ body {
   margin: 0 0 25% 0;
   position: relative;
 }
-
 
 .wrapper {
   display: flex;
@@ -31,6 +26,7 @@ body {
   animation: scroll 500s linear forwards;
   margin-left: 25%;
 }
+
 h1,h2 {
   text-align: center;
 }
@@ -38,4 +34,22 @@ h1,h2 {
 @keyframes scroll {
 	from { top: 0; transform: translateZ(0) rotateX(20deg); }
 	to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg); }
+}
+
+/* Apply responsive styles for smaller screens */
+
+@media screen and (max-width: 1290px) {
+
+  .wrapper {
+    height: auto;
+    width: 30%;
+  }
+
+  .scroll-text {
+    margin: 0;
+    font-size: x-large;
+    line-height: 150%;
+    flex-wrap: wrap;
+    position: fixed;
+  }
 }

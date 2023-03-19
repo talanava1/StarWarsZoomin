@@ -1,6 +1,8 @@
 import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
 import "./ReturnOfTheJedi.css"
+import returnofthejediphoto from "./../../../../src/images/returnofthejedi.jpg"
+
 
 interface ReturnOfTheJediProp {
     contents: string[];
@@ -43,6 +45,7 @@ interface ReturnOfTheJediProp {
         {films.map((film: Film) => (
           <div key={film.episode_id}>
             <h2>{film.title}</h2>
+            <img src={returnofthejediphoto} alt="movie-poster"/>
             <p>{film.opening_crawl}</p>
           </div>
         ))}

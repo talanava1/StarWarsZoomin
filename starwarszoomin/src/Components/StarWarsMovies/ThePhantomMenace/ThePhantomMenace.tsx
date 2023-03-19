@@ -1,6 +1,8 @@
 import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
 import "./ThePhantomMenace.css"
+import phantommenacephoto from "./../../../../src/images/rsz_161lzlkzfccl_ac_sy879_.jpeg"
+
 
 interface ThePhantomMenaceProp{
     contents: string[];
@@ -43,6 +45,7 @@ interface ThePhantomMenaceProp{
         {films.map((film: Film) => (
           <div key={film.episode_id}>
             <h2>{film.title}</h2>
+            <img src={phantommenacephoto} alt="movie-poster" />
             <p>{film.opening_crawl}</p>
           </div>
         ))}

@@ -42,8 +42,8 @@ interface StarWarsDetails {
       <div className="wrapper">
       <div className="scroll-text">
         <h1>STAR WARS</h1>
-        <h2>Scrolling Text Effect</h2>
-        <p>LONG AGO, IN A GALAXY FAR, FAR AWAY</p>
+        <p>LONG AGO, IN A GALAXY FAR, FAR</p>
+        <p>AWAY</p>
         <br></br>
         <p>YOU WERE PRESENTED THIS</p> 
         <p>ASSIGNMENT</p>

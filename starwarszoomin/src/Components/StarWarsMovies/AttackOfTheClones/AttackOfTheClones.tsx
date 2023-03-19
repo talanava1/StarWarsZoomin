@@ -1,6 +1,8 @@
 import React , { useState , useEffect} from "react";
 import TableOfContents from "../../TableOfContents/TableOfContents";
 import "./AttackOfTheClones.css"
+import attackoftheclonesphoto from "./../../../../src/images/attackoftheclones.jpg"
+
 
 interface AttackOfTheClonesProp{
     contents: string[];
@@ -43,6 +45,7 @@ interface AttackOfTheClonesProp{
         {films.map((film: Film) => (
           <div key={film.episode_id}>
             <h2>{film.title}</h2>
+            <img src={attackoftheclonesphoto} alt="movie-poster"/>
             <p>{film.opening_crawl}</p>
           </div>
         ))}
