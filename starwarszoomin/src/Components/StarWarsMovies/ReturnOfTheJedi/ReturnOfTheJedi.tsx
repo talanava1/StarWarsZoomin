@@ -7,12 +7,6 @@ interface ReturnOfTheJediProp {
     contents: string[];
   }
   
-  type Film = {
-    title: string;
-    opening_crawl: string;
-    episode_id: number;
-  };
-
   const ReturnOfTheJedi: React.FC<ReturnOfTheJediProp> = ({ contents }) => {
     const [loading, setIsLoading] = useState<boolean>(true);
     const [film, setFilms] = useState<any>([]);

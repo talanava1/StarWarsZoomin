@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TableOfContents from "../TableOfContents/TableOfContents";
+import heart from "../../../src/images/heart.svg"
 
 export interface MovieCardProps {
     title: string;
@@ -15,18 +16,18 @@ export const MovieCardComponent = ({title, episodeId, openingCrawl, loading, img
  const [isLiked, setIsLiked] = useState<boolean>(false);
 
   const handleButtonClick = (filmTitle: any) => {
-    let updatedArray = [...favoriteFilms]; // push new item to the array
+    let updatedArray = [...favoriteFilms]; 
     if (!updatedArray.includes(filmTitle)) {
         updatedArray = [...favoriteFilms, filmTitle];
-        setFavoriteFilms(updatedArray); // set state to the updated array
+        setFavoriteFilms(updatedArray); 
         setIsLiked(true);
     } else {
         updatedArray = favoriteFilms.filter((item) => item !== title)
         setFavoriteFilms(updatedArray);
         setIsLiked(false);
     }
-    const updatedArrayString = JSON.stringify(updatedArray); // convert updated array to string
-    localStorage.setItem("LikedFilms", updatedArrayString); // store updated array in localStorage
+    const updatedArrayString = JSON.stringify(updatedArray);
+    localStorage.setItem("LikedFilms", updatedArrayString); 
   }
 
   useEffect(() => {
@@ -55,7 +56,7 @@ export const MovieCardComponent = ({title, episodeId, openingCrawl, loading, img
             >
              {isLiked ? 'Remove from Favorites' : 'Select As Favorite' }
             </button>
-            <div className="likedsign">{isLiked && 'Favorited'}</div>
+            <div className="likedsign">{isLiked && <img className="heartsvg" src={heart}/>}</div>
           </div>)}
         </div>
       </div>

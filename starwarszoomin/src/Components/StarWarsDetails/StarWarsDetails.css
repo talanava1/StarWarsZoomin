@@ -1,5 +1,3 @@
-/* Set default styles for desktop screens */
-
 body {
   background: rgb(20,20,20);
   overflow: hidden;
@@ -35,8 +33,6 @@ h1,h2 {
 	from { top: 0; transform: translateZ(0) rotateX(20deg); }
 	to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg); }
 }
-
-/* Apply responsive styles for smaller screens */
 
 @media screen and (max-width: 1290px) {
 

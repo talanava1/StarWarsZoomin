@@ -8,11 +8,6 @@ interface RevengeoftheSithProps {
   contents: string[];
 }
 
-type Film = {
-  title: string;
-  opening_crawl: string;
-  episode_id: number;
-};
 
 const RevengeoftheSith: React.FC<RevengeoftheSithProps> = ({ contents }) => {
   const [loading, setIsLoading] = useState<boolean>(true);

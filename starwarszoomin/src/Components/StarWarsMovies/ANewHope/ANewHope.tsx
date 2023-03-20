@@ -7,16 +7,9 @@ interface ANewHope {
   contents: string[];
 }
 
-type Film = {
-  title: string;
-  opening_crawl: string;
-  episode_id: number;
-};
-
 const ANewHope: React.FC<ANewHope> = () => {
   const [film, setFilm] = useState<any>({});
   const [loading, setIsLoading] = useState<boolean>(true);
-  const [favoriteFilms, setFavoriteFilms] = useState<any>([]);
 
   useEffect(() => {
     fetch("https://swapi.dev/api/films/1/")

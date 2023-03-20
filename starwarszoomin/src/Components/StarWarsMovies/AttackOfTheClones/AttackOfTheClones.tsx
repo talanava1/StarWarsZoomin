@@ -8,11 +8,6 @@ import attackoftheclonesphoto from "./../../../../src/images/attackoftheclones.j
         contents: string[];
       }
       
-      type Film = {
-        title: string;
-        opening_crawl: string;
-        episode_id: number;
-      };
     
       const AttackOfTheClones: React.FC<AttackOfTheClonesProps> = ({ contents }) => {
         const [loading, setIsLoading] = useState<boolean>(true);

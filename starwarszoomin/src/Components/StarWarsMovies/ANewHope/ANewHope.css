@@ -87,6 +87,8 @@ position: relative;
 
 .likesign{
   margin-left: 18vw;
+  display: contents;
+  margin-top: 1vh;
 }
 }
 
@@ -143,6 +145,12 @@ position: relative;
     width: 30%;
   }
 
+  .heartsvg{
+    fill: red;
+    max-width: 10vw;
+    width: 6vw;
+  }
+
   .selectedbtn{
     margin-left: 8.5vw;
 
@@ -192,4 +200,11 @@ position: relative;
   100% {
     opacity: 0;
   }
+}
+
+
+.heartsvg{
+  fill: red;
+  max-width: 3vw;
+  padding-top: 1vh;
 }

@@ -30,15 +30,6 @@ interface StarWarsDetails {
     }, []);
 
     return (
-      //   <div className="main">
-      //   {films.map((film: Film) => (
-      //     <div key={film.episode_id}>
-      //       <h2>{film.title}</h2>
-      //       <p>{film.opening_crawl}</p>
-      //     </div>
-      //   ))}
-        
-      // </div>
       <div className="wrapper">
       <div className="scroll-text">
         <p></p>
@@ -64,21 +55,18 @@ interface StarWarsDetails {
       <br></br>
       
         <h1>STAR WARS</h1>
-        <p>LONG AGO, IN A GALAXY FAR, FAR</p>
-        <p>AWAY</p>
+        <p>LONG AGO, IN A GALAXY FAR, FAR AWAY,</p>
         <br></br>
-        <p>YOU WERE PRESENTED THIS</p> 
-        <p>WEBSITE</p>
+        <p>THIS WEBSITE WAS CREATED</p> 
           <br></br>
-       <p>THAT ALLOWED YOU TO</p>
-       <p>CLICK AND SEE DETAILS</p>
-       <p>OF YOUR FAVORITE STAR</p>
+       <p>THAT ALLOWED YOU TO CLICK AND SEE</p>
+       <p>DETAILS OF YOUR FAVORITE STAR</p>
        <p>WARS FILMS</p>
 
 
         <br></br>
         <p>AND ALSO CHOOSE WHICH ONE</p>
-        <p>IS YOUR FAVORITE</p>
+        <p>IS YOUR FAVORITE.</p>
 
         <br></br>
         <p>SEE FOR YOURSELF AND</p>

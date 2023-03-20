@@ -1,9 +1,24 @@
 .likedsign{
-    margin-left: 38vw;
+    margin-left: 37.5vw;
 }
 
 @media screen and (max-width: 753px) {
     .likedsign{
         margin-left: 34vw;
     }
+}
+
+@media screen and (max-width: 375px) {
+
+  
+    .heartsvg{
+      fill: red;
+      max-width: 8.5vw;
+    }
+
+    .likedsign{
+        margin-left: 34vw;
+        max-width: 10vw;
+    }
+
 }
